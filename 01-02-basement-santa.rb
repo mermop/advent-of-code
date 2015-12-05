@@ -1,8 +1,7 @@
 f = File.read('01-santa.txt')
-movements = f.split("")
 position = 0
 movement = 0
-movements.each do |m|
+f.each_char do |m|
   unless position == -1
     case m
       when "("
@@ -10,7 +9,6 @@ movements.each do |m|
       when ")"
         position -= 1
     end
-    puts position
     movement += 1
   end
 end
