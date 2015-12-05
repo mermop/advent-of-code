@@ -11,22 +11,15 @@ class Santastring
     case @s
     when /.*ab|cd|pq|xy.*/
       @niceness = false
-    when /.*cd.*/
-      @niceness = false
-    when /.*pq.*/
-      @niceness = false
-    when /.*xy.*/
-      @niceness = false
     when /.*[aeiou].*[aeiou].*[aeiou].*/
-      @niceness = true
-    when /.{2}/
-      @niceness = true
+      if @s =~ /(\w)\1+/
+        @niceness = true
+      end
     end
   end
 end
 
-strings = File.read('05-strings.txt')
-strings = strings.split("\n")
+strings = File.read('05-strings.txt').split("\n")
 strings.each do |s|
   Santastring.new(s)
 end
