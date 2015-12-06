@@ -1,0 +1,17 @@
+body {
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+  margin: 1em;
+}
+
+#floors {
+  margin: 2em 0;
+}
+.floor {
+  padding: 1em;
+  margin-right: 0.5em;
+  background-color: rgba(255, 0, 0, 0.2);
+  border-radius: 2em;
+  width: 1em;
+  display: inline-block;
+  text-align: center;
+}

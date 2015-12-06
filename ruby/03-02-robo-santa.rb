@@ -20,7 +20,7 @@ class Santa
   end
 end
 
-directions = File.read('/Users/merrin/projects/santa/03-directions.txt')
+directions = File.read('../data/03-directions.txt')
 directions = directions.split("")
 human_santa = Santa.new
 robo_santa = Santa.new

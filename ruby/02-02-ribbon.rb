@@ -24,7 +24,7 @@ class Package
   end
 end
 
-packages = File.read('02-wrapping-paper.txt')
+packages = File.read('../data/02-wrapping-paper.txt')
 packages = packages.split("\n")
 package_array = []
 packages.each do |p|

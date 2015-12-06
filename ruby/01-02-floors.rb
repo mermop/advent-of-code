@@ -1,4 +1,4 @@
-f = File.read('01-santa.txt')
+f = File.read('../data/01-santa.txt')
 position = 0
 movement = 0
 f.each_char do |m|
